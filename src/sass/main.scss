@@ -1,0 +1,371 @@
+@import "colors";
+
+html{
+	font-size: 14px;
+}
+
+body{
+	margin: 0;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	background-color: #fff;
+}
+
+img{
+	max-width: 100%;
+}
+
+.header{
+	background-image: url(../img/main-page-background.jpg);
+	background-size: cover;
+	background-position: 50%;
+
+	margin-bottom: 5rem;
+}
+
+.full-nav{
+	background-color: $add-bg-alpha;
+}
+
+.top-panel{
+	padding: 0;
+	border-bottom: solid 2px #252F37;
+	&_location{
+		color: $white;
+		font-style: italic;
+	}
+	&_social-btn{
+		float: right;
+		display: flex;
+		list-style-type: none;
+		margin: 0;
+		li{
+			margin-right: 10px;
+			font-size: 1.5rem;
+			a{
+				color: $active-link;
+				&:hover{
+					color: $white
+				}
+			}
+		}
+	}
+}
+
+.top-nav{
+	padding: 0;
+	&_brand{
+		&_logo{
+			display: inline;
+			width: 7.5rem;
+		}
+		p{
+			display: inline;
+			color: $white;
+		}
+	}
+	&_menu{
+		margin-top: 1rem;
+		list-style: none;
+		display: flex;
+		padding: 0;
+		li{
+			margin-right: 20px;
+			a{
+				font-size: 1rem;
+				text-transform: uppercase;
+				text-decoration: none;
+				color: $white;
+				font-weight: bold;
+				&::after{
+					content:'';
+					display: block;
+					width: 100%;
+					height: 2px;
+					background-color: $active-link;
+					transform: translateY(24px) scale(0);
+					transition: all 0.2s;
+				}
+				&:hover{
+					&::after{
+						transform: translateY(24px) scale(1);
+					}
+					color: $active-link
+				}
+			}
+		}
+	}
+	&_contacts{
+		margin-right: 10px;
+		list-style-type: none;
+		text-align: right;
+		font-style: italic;
+		color: $white;
+		&_phone{
+			font-size: 1.5rem;
+			font-weight: 700;
+			i{
+				font-size: 2rem;
+				color: $active-link;
+			}
+		}
+	}
+}
+
+.welcom{
+	color: $white;
+	&_preview{
+		h1{
+			text-align: center;
+			font-size: 4rem;
+			font-style: italic;
+		}
+		p{
+			text-align: center;
+			font-size: 1.5rem;
+			font-style: italic;
+		}
+	}
+}
+
+.main-page_form{
+	background-color: $add-bg-alpha;
+	margin: 5rem auto;
+	opacity: 0.8;
+	transition: all 0.2s;
+	&_inner{
+		padding: 20px;
+		h3{
+			font-size: 1.6rem;
+		}
+		&_object{
+			display: block;
+			margin-bottom: 20px;
+			width: 220px;
+			height: 35px;
+			outline: none;
+			&_btn{
+				font-style: inherit;
+				font-weight: 700;
+				color: $white;
+				background-color: $active-link;
+				border: none;
+				transition: all 0.2s;
+				&:hover{
+					color: $add-bg;
+					background-color: $white;
+				}
+			}
+		}
+	}
+	&:hover{
+		opacity: 1;
+	};
+}
+
+.preview-service{
+	background-color: $prev-bg;
+	position: relative;
+	padding: 90px 0;
+	&_caption{
+		display: block;
+		text-align: center;
+		&_content{
+			position: absolute;
+			top:0;
+			transform: translate3d(-50%, -50%, 0);
+			display: inline-block;
+			padding: 10px 30px;
+			text-align: center;
+			background-color: #fff;
+			box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+			&_inner{
+				font-size: 1.8rem;
+				display: inline;
+				color: rgb(0,0,0);
+			}
+		}
+	}
+	.icon-box{
+		text-align: center;
+		a{
+			text-decoration: none;
+		}
+		&_preview_ico{
+			i{
+				box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+				padding: 30px;
+				margin-bottom: 15px;
+				border-radius: 10px;
+				background-color: $white;
+				font-size: 4rem;
+				color: $active-link;
+				transition: all 0.2s;
+				&:hover{
+					background-color: $active-link;
+					color: #fff;
+				}
+			}
+			&_caption{
+				color: rgb(0,0,0);
+				font-size: 1.65rem;
+			}
+			&_desc{
+				color: #888;
+			}
+		}
+	}
+}
+
+@import "slick-theme";
+@import "slick";
+
+
+.preview-card-object{
+	text-align: center;
+	margin-bottom: 80px;
+	.caption{
+		margin-top: 50px;
+		margin-bottom: 25px;
+		font-size: 1.8rem;
+	}
+	a{
+		text-decoration: none;
+		&:focus{
+			outline:none;
+		}
+	}
+}
+
+.slider-list-object_slide{
+	padding: 10px;
+	margin: 0 15px;
+}
+
+.card-object{
+	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	&_photo{
+		background-size: cover;
+		background-position: 50%;
+		width: 100%;
+		height: 260px;
+	}
+	&_desc{
+		text-align: left;
+		font-size: 1.2rem;
+		color: #888;
+		&_price{
+			padding: 10px 20px;
+			color: rgb(0, 0, 0);
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+		&_title{
+			background-color: rgb(247, 247, 247);
+			padding: 10px 20px;
+			p{
+				margin-bottom: 0;
+			}
+			&_room{
+				color: rgb(0, 0, 0);
+				font-size: 1.4rem;
+			}
+			&_loc{
+				i{
+					font-size: 1rem;
+				}
+			}
+		}
+		&_details{
+			&_list{
+				display: flex;
+				padding-left: 20px;
+				padding-top: 10px;
+				list-style-type: none;
+				&_item{
+					margin-right: 50px;
+				}
+			}
+		}
+		&_additionally{
+			&_list{
+				display: flex;
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-bottom: 10px;
+				list-style-type: none;
+				justify-content: space-between;
+			}
+		}
+	}
+	&:hover{
+		box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+	}
+}
+
+.footer{
+	color: #888;
+	background-color: $dark;
+	padding: 20px 0;
+	a{
+		color: #666;
+		text-decoration: none;
+	}
+	.footer_brand{
+		width: 170px;
+		text-align:center;
+		.footer_brand_logo{
+			width: 7.5rem;
+		}
+		.footer_brand_text{
+			color: #fff;
+			font-size: 1.1rem;
+			line-height: 1;
+			font-weight: bold;
+		}
+	}
+	small{
+		display: block;
+		margin-top: 40px;
+	}
+	.footer_caption{
+		color: #fff;
+		font-size: 1.2rem;
+	}
+	.footer_menu{
+		display: inline-block;
+		width: 50%;
+		float: left;
+		padding: 0;
+		list-style-type: none;
+		line-height: 30px;
+		a{
+			transition: all 0.2s;
+			&:hover{
+				color: $active-link;
+			}
+		}
+	}
+	.footer-contacts{
+		text-align:right;
+		&_phone{
+			font-size: 1.5rem;
+			font-weight: 700;
+			color: $active-link;
+			i{
+				font-size: 2rem;
+				color: $active-link;
+			}
+		}
+		.footer_social-btn{
+			list-style-type: none;
+			padding: 0;
+			li{
+				display: inline-block;
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+}
