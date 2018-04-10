@@ -62,7 +62,7 @@ img {
 }
 
 .top-nav_brand_logo {
-  display: inline;
+  display: inline-block;
   width: 7.5rem;
 }
 

@@ -1,3 +1,4 @@
+// import colors
 @import "colors";
 
 html{
@@ -14,12 +15,12 @@ body{
 img{
 	max-width: 100%;
 }
-
+// start style header
 .header{
 	background-image: url(../img/main-page-background.jpg);
 	background-size: cover;
 	background-position: 50%;
-
+	
 	margin-bottom: 5rem;
 }
 
@@ -56,7 +57,7 @@ img{
 	padding: 0;
 	&_brand{
 		&_logo{
-			display: inline;
+			display: inline-block;
 			width: 7.5rem;
 		}
 		p{
@@ -111,6 +112,7 @@ img{
 		}
 	}
 }
+// end style header
 
 .welcom{
 	color: $white;
@@ -128,6 +130,7 @@ img{
 	}
 }
 
+// start style form
 .main-page_form{
 	background-color: $add-bg-alpha;
 	margin: 5rem auto;
@@ -162,7 +165,9 @@ img{
 		opacity: 1;
 	};
 }
+// end style form
 
+// start style service
 .preview-service{
 	background-color: $prev-bg;
 	position: relative;
@@ -216,11 +221,13 @@ img{
 		}
 	}
 }
+// end style service
 
+// import style slick slider
 @import "slick-theme";
 @import "slick";
 
-
+//start style slider
 .preview-card-object{
 	text-align: center;
 	margin-bottom: 80px;
@@ -303,7 +310,9 @@ img{
 		box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
 	}
 }
+// end style slider
 
+// start style footer
 .footer{
 	color: #888;
 	background-color: $dark;
@@ -367,5 +376,5 @@ img{
 			}
 		}
 	}
-
 }
+// end style footer
