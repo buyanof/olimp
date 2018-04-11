@@ -59,6 +59,7 @@ img {
 
 .top-nav {
   padding: 0;
+  position: relative;
 }
 
 .top-nav_brand_logo {
@@ -69,6 +70,21 @@ img {
 .top-nav_brand p {
   display: inline;
   color: #fff;
+}
+
+.top-nav_btn {
+  display: none;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 15px;
+  top: -50px;
+}
+
+.top-nav_btn:hover {
+  cursor: pointer;
 }
 
 .top-nav_menu {
@@ -711,4 +727,68 @@ img {
 .footer .footer-contacts .footer_social-btn li {
   display: inline-block;
   font-size: 1.5rem;
+}
+
+@media (max-width: 575px) {
+  .top-nav_btn {
+    display: block;
+  }
+  .top-nav_menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .top-nav_menu li {
+    text-align: center;
+    margin: 0;
+    line-height: 2;
+  }
+  .top-nav_menu li a::after {
+    display: none;
+  }
+  .top-nav_menu__active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer_brand {
+    margin: 0 auto;
+    float: none !important;
+  }
+  .footer_text {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .footer_caption {
+    text-align: center;
+  }
+  .footer_menu {
+    display: inline-block;
+    width: 100% !important;
+    clear: both;
+    text-align: center;
+  }
+  .footer-contacts {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer_brand {
+    float: left;
+    margin-bottom: 2rem;
+  }
+  .footer_text {
+    display: inline;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .top-nav_menu li a::after {
+    display: none;
+  }
 }

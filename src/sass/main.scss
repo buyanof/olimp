@@ -55,6 +55,7 @@ img{
 
 .top-nav{
 	padding: 0;
+	position: relative;
 	&_brand{
 		&_logo{
 			display: inline-block;
@@ -64,6 +65,20 @@ img{
 			display: inline;
 			color: $white;
 		}
+	}
+	&_btn{	
+		display: none;
+		font-size: 1.5rem;
+		color: $white;
+		background-color: transparent;
+		border: none;
+		position: absolute;
+		right: 15px;
+		top: -50px;
+		&:hover{
+			cursor: pointer;
+		} 
+
 	}
 	&_menu{
 		margin-top: 1rem;
@@ -378,3 +393,6 @@ img{
 	}
 }
 // end style footer
+
+//adavtiv style
+@import "media";
