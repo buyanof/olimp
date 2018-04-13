@@ -96,9 +96,21 @@
               <div class="main-page_form_inner">
                 <h3>Поиск по <br>параметрам:</h3>
                 <form action="#" method="POST">
-                  <input class="main-page_form_inner_object" type="text" placeholder="Тип недвижимости">
-                  <input class="main-page_form_inner_object" type="text" placeholder="Район">
-                  <input class="main-page_form_inner_object" type="text" placeholder="Округ">
+                  <select class="main-page_form_inner_object">
+                  <option selected="selected" hidden>Тип недвижимости</option>
+                  <option value="">Квартира</option>
+                  <option value="">Земельный участок</option>
+                  </select>
+                  <select class="main-page_form_inner_object">
+                      <option selected="selected" hidden>Район</option>
+                      <option value="">66 квартал</option>
+                      <option value="">Мылки</option>
+                  </select>
+                  <select class="main-page_form_inner_object">
+                      <option selected="selected" hidden>Округ</option>
+                      <option value="">Центральный</option>
+                      <option value="">Ленинский</option>
+                  </select>
                   <input class="main-page_form_inner_object" type="text" placeholder="Улица">
                   <input class="main-page_form_inner_object" type="text" placeholder="Количество комнат">
                   <input class="main-page_form_inner_object" type="text" placeholder="Цена от">

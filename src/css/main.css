@@ -184,6 +184,10 @@ img {
 }
 
 .main-page_form_inner_object {
+  background-color: #fff;
+  border-radius: 5px;
+  border-color: #fff;
+  color: #616161;
   display: block;
   margin-bottom: 20px;
   width: 220px;
