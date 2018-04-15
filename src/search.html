@@ -1,11 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	
+	<!-- FontAwesome CSS -->
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	
+	<!-- Main CSS -->
 	<link rel="stylesheet" href="css/main.min.css">
+	
+	<title>Поиск недвижимости</title>
 </head>
 <body>
+	<header class="header">
+		<div class="full-nav">
+			<div class="top-panel">
+				<div class="container-fluid">
+					<div class="row align-items-center justify-content-between">
+						<div class="col-6">
+							<div class="top-panel_location">
+								<div class="p">ОЛИМП - Центр Недвижимости</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<ul class="top-panel_social-btn">
+								<li><a href="#"><i class="fab fa-vk"></i></a></li>
+								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="top-nav">
+				<div class="container-fluid">
+					<div class="row align-items-center justify-content-between">
+						<div class="col-12 col-sm-auto">
+							<div class="top-nav_brand">
+								<a href="#"><img src="img/logo.png" alt="" class="top-nav_brand_logo"></a>
+							</div>
+						</div>
+						<div class="col-12 col-sm-auto">
+							<button class="top-nav_btn">
+								<i><i class="fas fa-bars"></i></i>
+							</button>
+							<ul class="top-nav_menu">
+								<li><a href="index.html">главная</a></li>
+								<li><a href="#">недвижимость</a></li>
+								<li><a href="#">услуги</a></li>
+								<li><a href="#">контакты</a></li>
+							</ul>
+						</div>
+						<div class="col-12 col-lg-auto">
+							<ul class="top-nav_contacts">
+								<li>Свяжитесь с нами</li>
+								<li class="top-nav_contacts_phone"><i class="fas fa-phone"></i> 8 (800)-050-00-00</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- end container header -->
 	
+	<div class="search">
+		<form action="search.html" method="GET" class="search_form">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="search_form_inner-object">
+							<select name="" id="">
+								<option value="">Земельный участок</option>
+								<option selected="selected" value="">Квартиры</option>
+							</select>
+							<div class="select-arrow"></div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="search_form_inner-object">
+							<select name="" id="">
+								<option selected="selected" value="">Любой округ</option>
+								<option value="">Центральный</option>
+								<option value="">Ленинский</option>
+							</select>
+							<div class="select-arrow"></div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<input class="search_form_inner-object" type="text" placeholder="Улица или номер объекта">
+					</div>
+					<div class="col-md-6">
+						<div class="search_form_inner-object_flat">
+							<input value="1" type="checkbox" id="chk1">
+							<label for="chk1">1 комн</label>
+							<input value="2" type="checkbox" id="chk2">
+							<label for="chk2">2 комн</label>
+							<input value="3" type="checkbox" id="chk3">
+							<label for="chk3">3 комн</label>
+							<input value="4" type="checkbox" id="chk4">
+							<label for="chk4">4 комн</label>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<input class="search_form_inner-object" type="text" placeholder="Стоимость от">
+					</div>
+					<div class="col-md-3">
+						<input class="search_form_inner-object" type="text" placeholder="Стоимость до">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<span class="add-settings"><i class="fas fa-plus-circle"></i> Дополнительные параметры</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<input class="search_form_inner-object search_form_inner-object_btn" type="submit" value="ПОИСК">
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-4">
+					<div class="footer_brand">
+						<a href="#">
+							<img src="img/logo.png" alt="" class="footer_brand_logo">
+							<div class="footer_brand_text">
+								Олимп <br> центр недвижимости
+							</div>
+						</a>
+					</div>
+					<small class="footer_text">Искренне надеемся, что размещенная здесь информация будет достойна Вашего внимания, а её содержание будет весьма полезно в сложном, но немаловажном процессе поиска недвижимого имущества, соответствующего Вашим интересам и требованиям.</small>
+				</div>
+				<div class="col-12 col-sm-6 col-md-5">
+					<p class="footer_caption">
+						Быстрые ссылки
+					</p>
+					<ul class="footer_menu">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Недвижимость</a></li>
+					</ul>
+					<ul class="footer_menu">
+						<li><a href="#">Оформление документов</a></li>
+						<li><a href="#">Прейскурант</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class=" col-12 col-sm-6 col-md-3">
+					<div class="footer-contacts">
+						<p class="footer_caption">Контакты</p>
+						<p class="footer-contacts_phone">8 (800)-050-00-00</p>
+						<p>Олимп - центр недвижимости</p>
+						<p>г.Комсольск-на-амуре</p>
+						<p>ул.Ленинградская 72, офис 1</p>
+						<ul class="footer_social-btn">
+							<li><a href="#"><i class="fab fa-vk"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, main.js -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js" ></script>
 </body>
 </html>

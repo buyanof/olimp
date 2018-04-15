@@ -39,8 +39,9 @@ $(document).ready(function() {
   
   // adaptive menu
   var menuBtn = $('.top-nav_btn');
-      var menu = $('.top-nav_menu');
-      menuBtn.click(function(){
-        menu.toggleClass('top-nav_menu__active');
-      });
+  var menu = $('.top-nav_menu');
+  menuBtn.click(function(){
+    menu.toggleClass('top-nav_menu__active');
+  });
+
 });
