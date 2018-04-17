@@ -44,4 +44,12 @@ $(document).ready(function() {
     menu.toggleClass('top-nav_menu__active');
   });
 
+  var addFormBtn = $('.add-settings');
+  var addForm = $('.add-settings-form');
+  var iconForm =$('.forRotate');
+  addFormBtn.click(function(){
+    addForm.toggleClass('add-settings-form__active');
+    iconForm.toggleClass('forRotate__active');
+  });
+
 });
