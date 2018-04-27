@@ -17,7 +17,7 @@ $(document).ready(function() {
   });
 
   //Button scrollTop
-  $('body').append('<span id="go-top"><i class="fas fa-arrow-up"></i></span>');
+  $('body').append('<span id="go-top"><i class="fas fa-angle-up"></i></span>');
   $(function() {
  $.fn.scrollToTop = function() {
   if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")

@@ -995,11 +995,50 @@ img {
   margin-bottom: 2rem;
 }
 
+.title {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.title .back-link {
+  font-size: 1.7rem;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #ED6755;
+  padding: 10px 20px;
+}
+
+.title .back-link:hover {
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.title .title_object p {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.title .title_object span {
+  color: gray;
+}
+
+.title .price_object p {
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ED6755;
+}
+
+.slider-object {
+  margin-bottom: 5rem;
+}
+
 .slider-object_for {
   margin-bottom: 10px;
 }
 
 .slider-object_for .slider-object_inner {
+  border-radius: 3px;
   background-size: cover;
   background-position: 50%;
   width: 100%;
@@ -1007,6 +1046,8 @@ img {
 }
 
 .slider-object_nav .slider-object_inner {
+  border-radius: 3px;
+  outline: none;
   background-size: cover;
   background-position: 50%;
   margin: 0 10px;
@@ -1014,15 +1055,104 @@ img {
   height: 100px;
 }
 
-.realtor-widget-details_photo {
-  margin-bottom: 10px;
-  display: block;
-  float: left;
+.params-object {
+  background-color: #F8F8F8;
+  padding: 20px;
 }
 
-.realtor-widget-details_photo img {
+.params-object-inner {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #C2C2C2;
+}
+
+.params-object-inner-value {
+  float: right;
+}
+
+.params-object-title {
+  font-size: 1.3rem;
+  margin-top: 3rem;
+  margin-bottom: 1.2rem;
+}
+
+.params-object-title p {
+  margin: 0;
+}
+
+.description .description-title {
+  font-size: 2rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #C2C2C2;
+}
+
+.description .description-text {
+  font-size: 1.2rem;
+}
+
+.sidebar {
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(80, 80, 80, 0.8);
+  box-shadow: 0px 0px 4px 0px rgba(80, 80, 80, 0.8);
+}
+
+.sidebar .realtor-widget {
+  padding: 12px;
+}
+
+.sidebar .realtor-widget-details {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.sidebar .realtor-widget-details_photo img {
   max-width: 72px;
   border-radius: 50%;
+}
+
+.sidebar .realtor-widget-details_contact {
+  position: absolute;
+  top: 15px;
+  left: 85px;
+}
+
+.sidebar .realtor-widget-details_contact p {
+  font-size: 1.1rem;
+  margin: 0;
+  color: gray;
+}
+
+.sidebar .realtor-widget-details_contact .fio {
+  color: #ED6755;
+  font-size: 1.2rem;
+}
+
+.sidebar .realtor-widget-form_inner {
+  margin-bottom: 15px;
+  border: solid grey 1px;
+  padding: 0 5px;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  color: gray;
+}
+
+.sidebar .realtor-widget-form_inner_add-info {
+  height: 100px;
+}
+
+.sidebar .realtor-widget-form_inner_btn {
+  margin-top: 50px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #ED6755;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.sidebar .realtor-widget-form_inner_btn:hover {
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 575px) {
