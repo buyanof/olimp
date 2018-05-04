@@ -2,14 +2,14 @@
 @import "colors";
 
 html{
-	font-size: 14px;
+	font-size: 16px;
 }
 
 body{
 	user-select: none;
 	margin: 0;
 	color: black;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	background-color: #fff;
 }
 
@@ -60,6 +60,7 @@ img{
 	padding: 0;
 	border-bottom: solid 2px #252F37;
 	&_location{
+		font-size: 0.8rem;
 		color: $white;
 		font-style: italic;
 	}
@@ -70,7 +71,7 @@ img{
 		margin: 0;
 		li{
 			margin-right: 10px;
-			font-size: 1.5rem;
+			font-size: 1rem;
 			a{
 				color: $active-link;
 				&:hover{
@@ -87,7 +88,7 @@ img{
 	&_brand{
 		&_logo{
 			display: inline-block;
-			width: 7.5rem;
+			width: 100px;
 		}
 		p{
 			display: inline;
@@ -96,7 +97,7 @@ img{
 	}
 	&_btn{	
 		display: none;
-		font-size: 1.5rem;
+		font-size: 1.8rem;
 		color: $white;
 		background-color: transparent;
 		border: none;
@@ -116,7 +117,7 @@ img{
 		li{
 			margin-right: 20px;
 			a{
-				font-size: 1rem;
+				font-size: 0.9rem;
 				text-transform: uppercase;
 				text-decoration: none;
 				color: $white;
@@ -143,7 +144,6 @@ img{
 		margin-right: 10px;
 		list-style-type: none;
 		text-align: right;
-		font-style: italic;
 		color: $white;
 		&_phone{
 			font-size: 1.5rem;
@@ -162,12 +162,12 @@ img{
 	&_preview{
 		h1{
 			text-align: center;
-			font-size: 4rem;
+			font-size: 3rem;
 			font-style: italic;
 		}
 		p{
 			text-align: center;
-			font-size: 1.5rem;
+			font-size: 1.2rem;
 			font-style: italic;
 		}
 	}
@@ -182,9 +182,10 @@ img{
 	&_inner{
 		padding: 20px;
 		h3{
-			font-size: 1.6rem;
+			font-size: 1rem;
 		}
 		&_object{
+			font-size: 0.8rem;
 			position: relative;
 			background-color: #fff;
 			border:none;
@@ -254,7 +255,7 @@ img{
 			background-color: #fff;
 			box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
 			&_inner{
-				font-size: 1.8rem;
+				font-size: 1.3rem;
 				display: inline;
 				color: rgb(0,0,0);
 			}
@@ -272,7 +273,7 @@ img{
 				margin-bottom: 15px;
 				border-radius: 10px;
 				background-color: $white;
-				font-size: 4rem;
+				font-size: 3rem;
 				color: $active-link;
 				transition: all 0.2s;
 				&:hover{
@@ -282,9 +283,10 @@ img{
 			}
 			&_caption{
 				color: rgb(0,0,0);
-				font-size: 1.65rem;
+				font-size: 1.3rem;
 			}
 			&_desc{
+				font-size: 0.8rem;
 				color: #888;
 			}
 		}
@@ -303,7 +305,7 @@ img{
 	.caption{
 		margin-top: 50px;
 		margin-bottom: 25px;
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 	}
 	a{
 		text-decoration: none;
@@ -320,7 +322,6 @@ img{
 
 .card-object{
 	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
-	text-align: center;
 	&_photo{
 		background-size: cover;
 		background-position: 50%;
@@ -329,12 +330,12 @@ img{
 	}
 	&_desc{
 		text-align: left;
-		font-size: 1.2rem;
+		font-size: 0.8rem;
 		color: #888;
 		&_price{
 			padding: 10px 20px;
 			color: rgb(0, 0, 0);
-			font-size: 1.5rem;
+			font-size: 1.4rem;
 			font-weight: bold;
 		}
 		&_title{
@@ -345,7 +346,7 @@ img{
 			}
 			&_room{
 				color: rgb(0, 0, 0);
-				font-size: 1.4rem;
+				font-size: 1.2rem;
 			}
 			&_loc{
 				i{
@@ -391,7 +392,7 @@ img{
 		text-decoration: none;
 	}
 	.footer_brand{
-		width: 170px;
+		width: 100%;
 		text-align:center;
 		.footer_brand_logo{
 			width: 7.5rem;
@@ -404,14 +405,17 @@ img{
 		}
 	}
 	small{
+		font-size: 0.7rem;
+		text-align: center;
 		display: block;
 		margin-top: 40px;
 	}
 	.footer_caption{
 		color: #fff;
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 	}
 	.footer_menu{
+		font-size: 1rem;
 		display: inline-block;
 		width: 50%;
 		float: left;
@@ -424,6 +428,8 @@ img{
 				color: $active-link;
 			}
 		}
+
+
 	}
 	.footer-contacts{
 		text-align:right;
@@ -439,6 +445,7 @@ img{
 		.footer_social-btn{
 			list-style-type: none;
 			padding: 0;
+			margin-bottom: 0;
 			li{
 				display: inline-block;
 				font-size: 1.5rem;
@@ -454,14 +461,14 @@ img{
 	margin-bottom: 2rem;
 }
 
-.title_search-page{
+.title-page{
 	margin-bottom: 3rem;
 	h1{
-		font-size: 2.5rem;
+		font-size: 1.8rem;
 		margin: 0;
 	}
 	span{
-		font-size: 1.3rem;
+		font-size: 1rem;
 		color: #888;
 	}
 }
@@ -473,9 +480,11 @@ img{
 	&_form{
 		width: 100%;
 		label{
+			font-size: 0.8rem;
 			margin-bottom: 0;
 		}
 		&_inner-object{
+			font-size: 0.8rem;
 			position: relative;
 			background-color: #fff;
 			margin: 10px 0 10px 0;
@@ -547,7 +556,7 @@ img{
 			}
 		}
 		.add-settings{
-			user-select: none;
+			font-size: 0.8rem;
 			margin: 15px 0;
 			display: inline-block;
 			color: $active-link;
@@ -560,6 +569,7 @@ img{
 		}
 		.add-settings-form{
 			.caption_add_settings{
+				font-size: 0.8rem;
 				display: block;
 			}
 			display: none;
@@ -628,17 +638,18 @@ img{
 	}
 	.title_object{
 		p{
-			font-size: 2rem;
+			font-size: 1.6rem;
 			margin: 0;
 		}
 		span{
+			font-size: 1rem;
 			color: gray;
 		}
 	}
 	.price_object{
 		p{
 			float: right;
-			font-size: 2rem;
+			font-size: 1.6rem;
 			font-weight: bold;
 			color: $active-link;
 		}
@@ -673,8 +684,11 @@ img{
 .params-object{
 	background-color: #F8F8F8;
 	padding: 20px;
+	&_main{
+		margin-bottom: 3rem;
+	}
 	&-inner{
-		font-size: 1.1rem;
+		font-size: 0.8rem;
 		margin-bottom: 10px;
 		border-bottom: 1px solid #C2C2C2;
 		&-value{
@@ -682,28 +696,32 @@ img{
 		}
 	}
 	&-title{
-		font-size: 1.3rem;
-		margin-top: 3rem;
+		font-size: 1rem;
 		margin-bottom: 1.2rem;
 		p{
 			margin: 0;
 		}
 	}
+	.add-settings-form_chk-set{
+		label{
+			font-size: 0.8rem;
+		}
+	}
 }
 
 .description{
-
 	.description-title{
-		font-size: 2rem;
+		font-size: 1.4rem;
 		padding-bottom: 10px;
 		border-bottom: 1px solid #C2C2C2;
 	}
 	.description-text{
-		font-size: 1.2rem;
+		font-size: 0.9rem;
 	}
 }
 
 .sidebar{
+	margin-bottom: 2rem;
 	box-shadow: 0px 0px 4px 0px rgba(80, 80, 80, 0.8);	
 	.realtor-widget{
 		padding: 12px;
@@ -721,19 +739,20 @@ img{
 				top: 15px;
 				left: 85px;
 				p{
-					font-size: 1.1rem;
+					font-size: 0.9rem;
 					margin: 0;
 					color: gray;
 				}
 				.fio{
 					color: $active-link;
-					font-size: 1.2rem;
+					font-size: 1.1rem;
 				}
 			}
 		}
 		&-form{
 			&_inner{
-				margin-bottom: 15px;
+				font-size: 0.8rem;
+				margin-bottom: 5px;
 				border: solid grey 1px;
 				padding: 0 5px;
 				outline: none;
@@ -745,7 +764,7 @@ img{
 				height: 100px;
 			}
 			&_inner_btn{
-				margin-top: 50px;
+				margin-top: 20px;
 				color: #fff;
 				font-weight: bold;
 				background-color: $active-link;
@@ -757,6 +776,55 @@ img{
 		}
 	}
 }
+.map-object{
+	height: 300px;
+	margin-bottom: 2rem;
+}
+.map-contact{
+	height: 400px;
+	margin-bottom: 2rem;
+}
+.title-contact{
+	margin-bottom: 2rem;
+	font-size: 1.3rem;
+	span{
+		border-bottom: 1px solid black;
+	}
+}
 
+.text-contact{
+	&-inner{
+		margin-bottom: 2.5rem;
+		&-title{
+			font-weight: bold;
+		}
+		&-value{
+			float: right;
+		}
+	}
+}
+.feedback-form{
+	background-color: #F8F8F8;
+	padding: 10px;
+	&-title{
+		font-size: 1.3rem;
+		display: block;
+		margin-bottom: 30px;
+	}
+	&-inner{
+		padding-left: 10px;
+		display: block;
+		margin-bottom: 10px;
+		width: 100%;
+		height: 40px;
+		outline: none;
+	}
+	textarea{
+		padding-left: 10px;
+		height: 160px;
+		outline: none;
+		width: 100%;
+	}
+}
 //adavtiv style
 @import "media";

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
   user-select: none;
   margin: 0;
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   background-color: #fff;
 }
 
@@ -62,6 +62,7 @@ img {
 }
 
 .top-panel_location {
+  font-size: 0.8rem;
   color: #fff;
   font-style: italic;
 }
@@ -77,7 +78,7 @@ img {
 
 .top-panel_social-btn li {
   margin-right: 10px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .top-panel_social-btn li a {
@@ -95,7 +96,7 @@ img {
 
 .top-nav_brand_logo {
   display: inline-block;
-  width: 7.5rem;
+  width: 100px;
 }
 
 .top-nav_brand p {
@@ -105,7 +106,7 @@ img {
 
 .top-nav_btn {
   display: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #fff;
   background-color: transparent;
   border: none;
@@ -132,7 +133,7 @@ img {
 }
 
 .top-nav_menu li a {
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
@@ -167,7 +168,6 @@ img {
   margin-right: 10px;
   list-style-type: none;
   text-align: right;
-  font-style: italic;
   color: #fff;
 }
 
@@ -187,13 +187,13 @@ img {
 
 .welcom_preview h1 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   font-style: italic;
 }
 
 .welcom_preview p {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-style: italic;
 }
 
@@ -211,10 +211,11 @@ img {
 }
 
 .main-page_form_inner h3 {
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
 .main-page_form_inner_object {
+  font-size: 0.8rem;
   position: relative;
   background-color: #fff;
   border: none;
@@ -297,7 +298,7 @@ img {
 }
 
 .preview-service_caption_content_inner {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   display: inline;
   color: black;
 }
@@ -317,7 +318,7 @@ img {
   margin-bottom: 15px;
   border-radius: 10px;
   background-color: #fff;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #ED6755;
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -331,10 +332,11 @@ img {
 
 .preview-service .icon-box_preview_ico_caption {
   color: black;
-  font-size: 1.65rem;
+  font-size: 1.3rem;
 }
 
 .preview-service .icon-box_preview_ico_desc {
+  font-size: 0.8rem;
   color: #888;
 }
 
@@ -618,7 +620,7 @@ img {
 .preview-card-object .caption {
   margin-top: 50px;
   margin-bottom: 25px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .preview-card-object a {
@@ -637,7 +639,6 @@ img {
 .card-object {
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
-  text-align: center;
 }
 
 .card-object_photo {
@@ -649,14 +650,14 @@ img {
 
 .card-object_desc {
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   color: #888;
 }
 
 .card-object_desc_price {
   padding: 10px 20px;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
@@ -671,7 +672,7 @@ img {
 
 .card-object_desc_title_room {
   color: black;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .card-object_desc_title_loc i {
@@ -721,7 +722,7 @@ img {
 }
 
 .footer .footer_brand {
-  width: 170px;
+  width: 100%;
   text-align: center;
 }
 
@@ -737,16 +738,19 @@ img {
 }
 
 .footer small {
+  font-size: 0.7rem;
+  text-align: center;
   display: block;
   margin-top: 40px;
 }
 
 .footer .footer_caption {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .footer .footer_menu {
+  font-size: 1rem;
   display: inline-block;
   width: 50%;
   float: left;
@@ -783,6 +787,7 @@ img {
 .footer .footer-contacts .footer_social-btn {
   list-style-type: none;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .footer .footer-contacts .footer_social-btn li {
@@ -795,17 +800,17 @@ img {
   margin-bottom: 2rem;
 }
 
-.title_search-page {
+.title-page {
   margin-bottom: 3rem;
 }
 
-.title_search-page h1 {
-  font-size: 2.5rem;
+.title-page h1 {
+  font-size: 1.8rem;
   margin: 0;
 }
 
-.title_search-page span {
-  font-size: 1.3rem;
+.title-page span {
+  font-size: 1rem;
   color: #888;
 }
 
@@ -820,10 +825,12 @@ img {
 }
 
 .search_form label {
+  font-size: 0.8rem;
   margin-bottom: 0;
 }
 
 .search_form_inner-object {
+  font-size: 0.8rem;
   position: relative;
   background-color: #fff;
   margin: 10px 0 10px 0;
@@ -913,10 +920,7 @@ img {
 }
 
 .search_form .add-settings {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  font-size: 0.8rem;
   margin: 15px 0;
   display: inline-block;
   color: #ED6755;
@@ -937,6 +941,7 @@ img {
 }
 
 .search_form .add-settings-form .caption_add_settings {
+  font-size: 0.8rem;
   display: block;
 }
 
@@ -1014,17 +1019,18 @@ img {
 }
 
 .title .title_object p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin: 0;
 }
 
 .title .title_object span {
+  font-size: 1rem;
   color: gray;
 }
 
 .title .price_object p {
   float: right;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: #ED6755;
 }
@@ -1060,8 +1066,12 @@ img {
   padding: 20px;
 }
 
+.params-object_main {
+  margin-bottom: 3rem;
+}
+
 .params-object-inner {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   margin-bottom: 10px;
   border-bottom: 1px solid #C2C2C2;
 }
@@ -1071,8 +1081,7 @@ img {
 }
 
 .params-object-title {
-  font-size: 1.3rem;
-  margin-top: 3rem;
+  font-size: 1rem;
   margin-bottom: 1.2rem;
 }
 
@@ -1080,17 +1089,22 @@ img {
   margin: 0;
 }
 
+.params-object .add-settings-form_chk-set label {
+  font-size: 0.8rem;
+}
+
 .description .description-title {
-  font-size: 2rem;
+  font-size: 1.4rem;
   padding-bottom: 10px;
   border-bottom: 1px solid #C2C2C2;
 }
 
 .description .description-text {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 }
 
 .sidebar {
+  margin-bottom: 2rem;
   -webkit-box-shadow: 0px 0px 4px 0px rgba(80, 80, 80, 0.8);
   box-shadow: 0px 0px 4px 0px rgba(80, 80, 80, 0.8);
 }
@@ -1116,18 +1130,19 @@ img {
 }
 
 .sidebar .realtor-widget-details_contact p {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   margin: 0;
   color: gray;
 }
 
 .sidebar .realtor-widget-details_contact .fio {
   color: #ED6755;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .sidebar .realtor-widget-form_inner {
-  margin-bottom: 15px;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
   border: solid grey 1px;
   padding: 0 5px;
   outline: none;
@@ -1141,7 +1156,7 @@ img {
 }
 
 .sidebar .realtor-widget-form_inner_btn {
-  margin-top: 50px;
+  margin-top: 20px;
   color: #fff;
   font-weight: bold;
   background-color: #ED6755;
@@ -1153,6 +1168,64 @@ img {
 .sidebar .realtor-widget-form_inner_btn:hover {
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.map-object {
+  height: 300px;
+  margin-bottom: 2rem;
+}
+
+.map-contact {
+  height: 400px;
+  margin-bottom: 2rem;
+}
+
+.title-contact {
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+
+.title-contact span {
+  border-bottom: 1px solid black;
+}
+
+.text-contact-inner {
+  margin-bottom: 2.5rem;
+}
+
+.text-contact-inner-title {
+  font-weight: bold;
+}
+
+.text-contact-inner-value {
+  float: right;
+}
+
+.feedback-form {
+  background-color: #F8F8F8;
+  padding: 10px;
+}
+
+.feedback-form-title {
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.feedback-form-inner {
+  padding-left: 10px;
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 40px;
+  outline: none;
+}
+
+.feedback-form textarea {
+  padding-left: 10px;
+  height: 160px;
+  outline: none;
+  width: 100%;
 }
 
 @media (max-width: 575px) {
@@ -1180,6 +1253,7 @@ img {
     display: flex;
   }
   .footer_brand {
+    display: block;
     margin: 0 auto;
     float: none !important;
   }
@@ -1192,6 +1266,7 @@ img {
     text-align: center;
   }
   .footer_menu {
+    float: left;
     display: inline-block;
     width: 100% !important;
     clear: both;
@@ -1203,21 +1278,42 @@ img {
   .title_search-page {
     text-align: center;
   }
+  .title_object p {
+    margin-top: 2rem !important;
+  }
+  .price_object p {
+    float: left !important;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 828px) {
   .footer_brand {
     float: left;
     margin-bottom: 2rem;
   }
   .footer_text {
+    margin-bottom: 2rem;
     display: inline;
     text-align: center;
+  }
+  .footer_menu {
+    float: left;
+    display: block !important;
+    width: 100% !important;
   }
 }
 
 @media (max-width: 991px) {
   .top-nav_menu li a::after {
     display: none;
+  }
+  .params-object {
+    margin-bottom: 3rem;
+  }
+  .description {
+    margin-bottom: 3rem;
+  }
+  .sidebar {
+    margin-bottom: 3rem;
   }
 }

@@ -10,6 +10,7 @@
 	
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
 	
 	<!-- FontAwesome CSS -->
 	<link rel="stylesheet" href="css/fontawesome-all.min.css">
@@ -54,9 +55,9 @@
 							</button>
 							<ul class="top-nav_menu">
 								<li><a href="index.html">главная</a></li>
-								<li><a href="#">недвижимость</a></li>
+								<li><a href="search.html">недвижимость</a></li>
 								<li><a href="#">услуги</a></li>
-								<li><a href="#">контакты</a></li>
+								<li><a href="contact.html">контакты</a></li>
 							</ul>
 						</div>
 						<div class="col-12 col-lg-auto">
@@ -66,7 +67,6 @@
 							</ul>
 						</div>
 					</div>
-					
 				</div>
 			</nav>
 		</div>
@@ -76,16 +76,16 @@
 	<div class="title">
 		<div class="container">
 			<div class="row align-items-center">
-				<div class="col-md-2">
+				<div class="col-md-2 col-lg-2 col-sm-2">
 					<a class="back-link" href="search.html"><i class="fas fa-angle-left"></i></a>
 				</div>
-				<div class="col-md-7">
+				<div class="col-md-7 col-lg-7 col-sm-10">
 					<div class="title_object">
 						<p>3 комн. квартира, 65 м<sup>2</sup></p>
 						<span><i class="fas fa-map-marker-alt"></i> Ленинский округ, Ленинградская д.72</span>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-lg-3 col-sm-12">
 					<div class="price_object">
 						<p>2 500 500 <i class="fas fa-ruble-sign"></i></p>
 					</div>
@@ -96,7 +96,7 @@
 	
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-md-12 col-lg-8">
 				<div class="slider-object">
 					<div class="slider-object_for">
 						<div class="slider-object_inner" style="background-image: url(img/1/1.jpg)"></div>
@@ -114,55 +114,69 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-12 col-lg-4">
 				<div class="params-object">
-					<div class="params-object-inner">
-						<span class="params-object-inner-title">Код объекта:</span> <span class="params-object-inner-value">123124</span>
-					</div>
-					<div class="params-object-inner">
-						<span class="params-object-inner-title">Площадь:</span> <span class="params-object-inner-value">65 м<sup>2</sup></span>
-					</div>
-					<div class="params-object-inner">
-						<span class="params-object-inner-title">Комнат:</span> <span class="params-object-inner-value">3</span>
-					</div>
-					<div class="params-object-inner">
-						<span class="params-object-inner-title">Этаж/этажность:</span> <span class="params-object-inner-value">3/9</span>
-					</div>
-					<div class="params-object-title">
-						<p>Дополнительные параметры:</p>
-					</div>
-					<div class="params-object-inner">
-						<span class="params-object-inner-title">Округ:</span> <span class="params-object-inner-value">Ленинский</span>
-					</div>
-					<div class="params-object-inner">
-						<span class="params-object-inner-title">Район:</span> <span class="params-object-inner-value">Дземги</span>
-					</div>
-					<div class="params-object-inner">
-						<span class="params-object-inner-title">Тип дома:</span> <span class="params-object-inner-value">Панельный</span>
-					</div>
-					<div class="params-object-inner">
-						<span class="params-object-inner-title">Состояние:</span> <span class="params-object-inner-value">Жилое</span>
-					</div>
-					<div class="params-object-inner">
-						<span class="params-object-inner-title">Площадь жилая:</span> <span class="params-object-inner-value">3/9</span>
-					</div>
-					<div class="add-settings-form_chk-set">
-							<input type="checkbox" name="" id="chk_balcony">
-							<label for="chk_balcony">Балкон/лоджия</label>
+					<div class="row">
+						<div class="col-md-6 col-lg-12">
+							<div class="params-object_main">
+								<div class="params-object-title">
+									<p>Основные параметры:</p>
+								</div>
+								<div class="params-object-inner">
+									<span class="params-object-inner-title">Код объекта:</span> <span class="params-object-inner-value">123124</span>
+								</div>
+								<div class="params-object-inner">
+									<span class="params-object-inner-title">Площадь:</span> <span class="params-object-inner-value">65 м<sup>2</sup></span>
+								</div>
+								<div class="params-object-inner">
+									<span class="params-object-inner-title">Комнат:</span> <span class="params-object-inner-value">3</span>
+								</div>
+								<div class="params-object-inner">
+									<span class="params-object-inner-title">Этаж/этажность:</span> <span class="params-object-inner-value">3/9</span>
+								</div>
+							</div>
 						</div>
-						
-						<div class="add-settings-form_chk-set">
-							<input type="checkbox" name="" id="chk_shared_rooms">
-							<label for="chk_shared_rooms">Разделенные комнаты</label>
+						<div class="col-md-6 col-lg-12">
+							<div class="params-object_additionally">
+								<div class="params-object-title">
+									<p>Дополнительные параметры:</p>
+								</div>
+								<div class="params-object-inner">
+									<span class="params-object-inner-title">Округ:</span> <span class="params-object-inner-value">Ленинский</span>
+								</div>
+								<div class="params-object-inner">
+									<span class="params-object-inner-title">Район:</span> <span class="params-object-inner-value">Дземги</span>
+								</div>
+								<div class="params-object-inner">
+									<span class="params-object-inner-title">Тип дома:</span> <span class="params-object-inner-value">Панельный</span>
+								</div>
+								<div class="params-object-inner">
+									<span class="params-object-inner-title">Состояние:</span> <span class="params-object-inner-value">Жилое</span>
+								</div>
+								<div class="params-object-inner">
+									<span class="params-object-inner-title">Площадь жилая:</span> <span class="params-object-inner-value">3/9</span>
+								</div>
+								<div class="add-settings-form_chk-set">
+									<input type="checkbox" name="" id="chk_balcony">
+									<label for="chk_balcony">Балкон/лоджия</label>
+								</div>
+
+								<div class="add-settings-form_chk-set">
+									<input type="checkbox" name="" id="chk_shared_rooms">
+									<label for="chk_shared_rooms">Разделенные комнаты</label>
+								</div>
+
+								<div class="add-settings-form_chk-set">
+									<input type="checkbox" name="" id="chk_shared_bath">
+									<label for="chk_shared_bath">Разделенный санузел</label>
+								</div>
+							</div>
 						</div>
-						
-						<div class="add-settings-form_chk-set">
-							<input type="checkbox" name="" id="chk_shared_bath">
-							<label for="chk_shared_bath">Разделенный санузел</label>
-						</div>
+					</div>
+
 				</div>
 			</div>
-			<div class="col-md-8">
+			<div class="col-md-12 col-lg-8">
 				<div class="description">
 					<p class="description-title">
 						Описание
@@ -172,7 +186,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-12 col-lg-4">
 				<div class="sidebar">
 					<div class="realtor-widget">
 						<div class="realtor-widget-details">
@@ -193,18 +207,26 @@
 						</form>
 					</div>
 				</div>
+				
+				
 			</div>
 		</div>
+
 		<div class="row">
-			
+			<div class="col-lg-12">
+				<div class="map-object" id="map">
+
+				</div>
+			</div>
 		</div>
+
 	</div>
 
 	<!-- start footer -->
 	<footer class="footer">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-12 col-md-4">
+				<div class="col-12 col-sm-4 col-md-3">
 					<div class="footer_brand">
 						<a href="#">
 							<img src="img/logo.png" alt="" class="footer_brand_logo">
@@ -215,7 +237,7 @@
 					</div>
 					<small class="footer_text">Искренне надеемся, что размещенная здесь информация будет достойна Вашего внимания, а её содержание будет весьма полезно в сложном, но немаловажном процессе поиска недвижимого имущества, соответствующего Вашим интересам и требованиям.</small>
 				</div>
-				<div class="col-12 col-sm-6 col-md-5">
+				<div class="col-12 col-sm-3 col-md-5">
 					<p class="footer_caption">
 						Быстрые ссылки
 					</p>
@@ -230,7 +252,7 @@
 						<li><a href="#">Контакты</a></li>
 					</ul>
 				</div>
-				<div class=" col-12 col-sm-6 col-md-3">
+				<div class=" col-12 col-sm-5 col-md-4">
 					<div class="footer-contacts">
 						<p class="footer_caption">Контакты</p>
 						<p class="footer-contacts_phone">8 (924)-207-69-97</p>
@@ -251,9 +273,14 @@
 	
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, main.js -->
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/slider_object-page.js"></script>
-	<script src="js/main.js" ></script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwUOXHVinLHJoZ0btxcxwJ4YhqV91MkHA&callback=initMap">
+</script>
+<script src="js/map-object.js"></script>
+<script src="js/main.js" ></script>
 </body>
 </html>
