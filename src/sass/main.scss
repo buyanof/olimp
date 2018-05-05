@@ -776,6 +776,11 @@ img{
 		}
 	}
 }
+.map-title{
+	padding-bottom: 10px;
+	font-size: 1.4rem;
+	border-bottom: 1px solid #C2C2C2;
+}
 .map-object{
 	height: 300px;
 	margin-bottom: 2rem;
@@ -824,6 +829,23 @@ img{
 		height: 160px;
 		outline: none;
 		width: 100%;
+	}
+}
+.service{
+	&-title{
+		font-size: 1.3rem;
+		margin-bottom: 0;
+		border-bottom: 1px solid #888;
+	}
+	&-title-preview{
+		display: block;
+		font-size: 0.9rem;
+		color:#888;
+		margin-bottom: 1rem;
+	}
+	&-description{
+		list-style-type: square;
+		padding-left: 20px;
 	}
 }
 //adavtiv style
