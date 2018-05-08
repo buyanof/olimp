@@ -1093,6 +1093,10 @@ img {
   font-size: 0.8rem;
 }
 
+.description {
+  margin-bottom: 2rem;
+}
+
 .description .description-title {
   font-size: 1.4rem;
   padding-bottom: 10px;
@@ -1101,6 +1105,16 @@ img {
 
 .description .description-text {
   font-size: 0.9rem;
+}
+
+.calculate {
+  margin-bottom: 2rem;
+}
+
+.calculate-title {
+  font-size: 1.4rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #C2C2C2;
 }
 
 .sidebar {
@@ -1252,6 +1266,41 @@ img {
   padding-left: 20px;
 }
 
+.no-border {
+  border-right: none !important;
+}
+
+.counters {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  background-color: #F8F8F8;
+  padding: 20px 0;
+}
+
+.counters .counter-box {
+  text-align: center;
+  padding: 50px 0;
+  border-right: 1px solid #888;
+}
+
+.counters .counter-box i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ED6755;
+  margin-bottom: 2rem;
+}
+
+.counters .counter-box span {
+  display: block;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.counters .counter-box p {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
 @media (max-width: 575px) {
   .top-nav_btn {
     display: block;
@@ -1310,6 +1359,12 @@ img {
   }
 }
 
+@media (max-width: 767px) {
+  .counter-box {
+    border-bottom: 1px solid #888;
+  }
+}
+
 @media (max-width: 828px) {
   .footer_brand {
     float: left;
@@ -1339,5 +1394,8 @@ img {
   }
   .sidebar {
     margin-bottom: 3rem;
+  }
+  .counter-box {
+    border-right: none !important;
   }
 }

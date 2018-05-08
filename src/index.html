@@ -5,7 +5,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
+
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -95,7 +95,7 @@
 							<div class="col-md">
 								<div class="main-page_form_inner">
 									<h3>Поиск по <br>параметрам:</h3>
-									<form action="#" method="GET">
+									<form name="myform" action="#" method="GET">
 										<div class="main-page_form_inner_object">
 											<select>
 												<option selected="selected" hidden>Тип недвижимости</option>
@@ -120,11 +120,12 @@
 											</select>
 											<div class="select-arrow"></div>
 										</div>
-										<input class="main-page_form_inner_object" type="text" placeholder="Улица">
-										<input class="main-page_form_inner_object" type="text" placeholder="Количество комнат">
-										<input class="main-page_form_inner_object" type="text" placeholder="Цена от">
-										<input class="main-page_form_inner_object" type="text" placeholder="Цена до">
+										<input class="main-page_form_inner_object" type="text" placeholder="Улица" pattern="^[А-Яа-яЁё\s]+$">
+										<input class="main-page_form_inner_object" type="number" placeholder="Количество комнат" max="5">
+										<input class="main-page_form_inner_object" id="priceot" type="text" placeholder="Цена от" data-precision="0">
+										<input class="main-page_form_inner_object" id="pricedo" type="text" placeholder="Цена до" data-precision="0">
 										<input class="main-page_form_inner_object main-page_form_inner_object_btn" type="submit" value="ПОИСК">
+
 									</form>
 								</div>
 							</div>
@@ -135,7 +136,7 @@
 		</div>
 	</header>
 	<!-- end container header -->
-	
+
 	<!-- start preview-service -->
 	<div class="preview-service">
 		<div class="container">
@@ -188,7 +189,7 @@
 							<p class="icon-box_preview_ico_desc">Операции с недвижимостью любой сложности!</p>
 						</div>
 					</div>
-					
+
 				</div>
 				<div class="col-md-3">
 					<div class="icon-box">
@@ -216,7 +217,7 @@
 		</div>
 	</div>
 	<!-- end preview-service -->
-	
+
 	<!-- start preview-card-object -->
 	<div class="preview-card-object">
 		<div class="container">
@@ -344,7 +345,7 @@
 		</div>
 	</div>
 	<!-- end preview-card-object -->
-	
+
 	<!-- start footer -->
 	<footer class="footer">
 		<div class="container-fluid">
@@ -393,10 +394,17 @@
 		</div>
 	</footer>
 	<!-- end footer -->
-	
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, main.js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/jquery.maskMoney.min.js"></script>
+	<script>
+		$(function() {
+			$('#pricedo').maskMoney()
+			$('#priceot').maskMoney()
+		})
+	</script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/slider_main-page.js"></script>
 	<script src="js/main.js" ></script>

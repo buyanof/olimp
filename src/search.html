@@ -114,7 +114,7 @@
 					</div>
 					<div class="col-md-6">
 						<label for="">Улица или номер объекта:</label>
-						<input class="search_form_inner-object" type="text" placeholder="Улица или номер объекта">
+						<input class="search_form_inner-object" type="text" placeholder="Улица или номер объекта" pattern="^[А-Яа-яЁё\s0-9]+$">
 					</div>
 					<div class="col-md-6">
 						<label for="">Количество комнат:</label>
@@ -131,11 +131,11 @@
 					</div>
 					<div class="col-md-3">
 						<label for="">Стоимость от:</label>
-						<input class="search_form_inner-object" type="text" placeholder="Стоимость от">
+						<input class="search_form_inner-object" id="priceot" type="text" placeholder="Стоимость от" data-precision="0">
 					</div>
 					<div class="col-md-3">
 						<label for="">Стоимость до:</label>
-						<input class="search_form_inner-object" type="text" placeholder="Стоимость до">
+						<input class="search_form_inner-object" id="pricedo" type="text" placeholder="Стоимость до" data-precision="0">
 					</div>
 				</div>
 				<div class="row">
@@ -170,19 +170,19 @@
 					</div>
 					<div class="col-md-3">
 						<label for="">Площадь жилая от:</label>
-						<input class="search_form_inner-object" type="text" placeholder="S жилая от">
+						<input class="search_form_inner-object" type="number" placeholder="S жилая от">
 					</div>
 					<div class="col-md-3">
 						<label for="">Площадь жилая до:</label>
-						<input class="search_form_inner-object" type="text" placeholder="S жилая до">
+						<input class="search_form_inner-object" type="number" placeholder="S жилая до">
 					</div>
 					<div class="col-md-3">
 						<label for="">Этаж квартиры:</label>
-						<input class="search_form_inner-object" type="text" placeholder="Этаж">
+						<input class="search_form_inner-object" type="number" placeholder="Этаж" max="20">
 					</div>
 					<div class="col-md-3">
 						<label for="">Этажность дома:</label>
-						<input class="search_form_inner-object" type="text" placeholder="Этажность">
+						<input class="search_form_inner-object" type="number" placeholder="Этажность" max="20">
 					</div>
 					<div class="col-md-4">
 						<label for="">Состояние квартиры:</label>
@@ -383,6 +383,13 @@
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, main.js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/jquery.maskMoney.min.js"></script>
+	<script>
+		$(function() {
+			$('#pricedo').maskMoney()
+			$('#priceot').maskMoney()
+		})
+	</script>
 	<script src="js/main.js" ></script>
 </body>
 </html>

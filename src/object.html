@@ -177,14 +177,35 @@
 				</div>
 			</div>
 			<div class="col-md-12 col-lg-8">
-				<div class="description">
-					<p class="description-title">
-						Описание
-					</p>
-					<p class="description-text">
-						Продается трёхкомнатная квартира улучшенной планировки с большой кухней. Комнаты раздельные, на две стороны дома . Санузел раздельный. Ванна отделана  кафелем. Имеется кладовая. Установлены пластиковые окна по всей квартире. Большой балкон застеклен алюминиевыми рамами,  с внешней и внутренней отделкой. Состояние жилое. Дом расположен в районе с развитой инфраструктурой, рядом находится детский сад №6, во дворе - школа №3.
-					</p>
+				<div class="row">
+					<div class="col-12">
+						<div class="description">
+							<p class="description-title">
+								Описание
+							</p>
+							<p class="description-text">
+								Продается трёхкомнатная квартира улучшенной планировки с большой кухней. Комнаты раздельные, на две стороны дома . Санузел раздельный. Ванна отделана  кафелем. Имеется кладовая. Установлены пластиковые окна по всей квартире. Большой балкон застеклен алюминиевыми рамами,  с внешней и внутренней отделкой. Состояние жилое. Дом расположен в районе с развитой инфраструктурой, рядом находится детский сад №6, во дворе - школа №3.
+							</p>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="calculate">
+							<p class="calculate-title">Рассчитать ипотеку</p>
+							<div class="calculate-frame">
+								<iframe id="calc-iframe" width="100%" height="300" style="width:1px; min-width: 100%;" scrolling="no" src="https://calcus.ru/kalkulyator-ipoteki?embed=1" frameborder="0"></iframe>
+								<div style="margin-top:5px; font-size: 0.6em; color:#999">Ипотечный калькулятор предоставлен сайтом <a href="https://calcus.ru/kalkulyator-ipoteki" target="_blank">calcus.ru</a></div>
+								<script>
+									window.addEventListener('message', function(event) {
+										if(height = event.data['height']) {
+											document.getElementById('calc-iframe').style.height =  height + 'px'
+										}
+									})
+								</script>
+							</div>
+						</div>
+					</div>
 				</div>
+				
 			</div>
 			<div class="col-md-12 col-lg-4">
 				<div class="sidebar">
@@ -218,11 +239,9 @@
 					Карта проезда
 				</p>
 				<div class="map-object" id="map">
-
 				</div>
 			</div>
 		</div>
-
 	</div>
 
 	<!-- start footer -->

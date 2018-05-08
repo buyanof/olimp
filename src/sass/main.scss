@@ -710,6 +710,7 @@ img{
 }
 
 .description{
+	margin-bottom: 2rem;
 	.description-title{
 		font-size: 1.4rem;
 		padding-bottom: 10px;
@@ -717,6 +718,17 @@ img{
 	}
 	.description-text{
 		font-size: 0.9rem;
+	}
+}
+
+.calculate{
+	margin-bottom: 2rem;
+	&-title{
+		font-size: 1.4rem;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #C2C2C2;
+	}
+	&-frame{
 	}
 }
 
@@ -848,5 +860,37 @@ img{
 		padding-left: 20px;
 	}
 }
+
+//start style about page
+.no-border{
+	border-right: none !important; 
+}
+.counters{
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+	background-color: #F8F8F8;
+	padding: 20px 0;
+	.counter-box{
+		text-align: center;
+		padding: 50px 0;
+		border-right: 1px solid #888;
+		i{
+			font-size: 3rem;
+			margin-bottom: 1rem;
+			color: $active-link;
+			margin-bottom: 2rem;
+		}
+		span{
+			display: block;
+			font-size: 2.3rem;
+			font-weight: bold;
+		}
+		p{
+			font-weight: bold;
+			font-size: 1.3rem;
+		}
+	}
+}
+
 //adavtiv style
 @import "media";
