@@ -211,11 +211,11 @@ img {
 }
 
 .main-page_form_inner h3 {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .main-page_form_inner_object {
-  font-size: 0.8rem;
+  font-size: 1rem;
   position: relative;
   background-color: #fff;
   border: none;
@@ -336,7 +336,7 @@ img {
 }
 
 .preview-service .icon-box_preview_ico_desc {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #888;
 }
 
@@ -672,7 +672,11 @@ img {
 
 .card-object_desc_title_room {
   color: black;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+}
+
+.card-object_desc_title_loc {
+  font-size: 1rem;
 }
 
 .card-object_desc_title_loc i {
@@ -689,10 +693,12 @@ img {
 }
 
 .card-object_desc_details_list_item {
+  font-size: 1rem;
   margin-right: 50px;
 }
 
 .card-object_desc_additionally_list {
+  font-size: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -825,12 +831,12 @@ img {
 }
 
 .search_form label {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-bottom: 0;
 }
 
 .search_form_inner-object {
-  font-size: 0.8rem;
+  font-size: 1rem;
   position: relative;
   background-color: #fff;
   margin: 10px 0 10px 0;
@@ -920,7 +926,7 @@ img {
 }
 
 .search_form .add-settings {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 15px 0;
   display: inline-block;
   color: #ED6755;
@@ -941,7 +947,7 @@ img {
 }
 
 .search_form .add-settings-form .caption_add_settings {
-  font-size: 0.8rem;
+  font-size: 1rem;
   display: block;
 }
 
@@ -1071,7 +1077,7 @@ img {
 }
 
 .params-object-inner {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-bottom: 10px;
   border-bottom: 1px solid #C2C2C2;
 }
@@ -1090,7 +1096,7 @@ img {
 }
 
 .params-object .add-settings-form_chk-set label {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .description {
@@ -1104,7 +1110,7 @@ img {
 }
 
 .description .description-text {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .calculate {
@@ -1155,7 +1161,7 @@ img {
 }
 
 .sidebar .realtor-widget-form_inner {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-bottom: 5px;
   border: solid grey 1px;
   padding: 0 5px;
